@@ -1,5 +1,5 @@
 /*
- * File: builtin.c
+ * Filename: builtin.c
  * Auth: Richard Ben Aboje
  *       Mene Tina
  */
@@ -11,13 +11,13 @@ void set_alias(char *var_name, char *value);
 void print_alias(alias_t *alias);
 
 /**
- * shellby_alias - Builtin command that either prints all aliases, specific
+ * shell_alias - Builtin command used either to print all akas', specific
  * aliases, or sets an alias.
  * @args: An array of arguments.
- * @front: A double pointer to the beginning of args.
+ * @front: A double pointer to the beginning of arguments.
  *
  * Return: If an error occurs - -1.
- *         Otherwise - 0.
+ *         Success - 0.
  */
 int shellby_alias(char **args, char __attribute__((__unused__)) **front)
 {
